@@ -1,0 +1,18 @@
+#+title: About
+#+tags: seylerius
+#+description: About Elliott Seyler.
+#+OPTIONS: toc:nil
+
+This blog is way to keep track of stuff that I am thinking about or
+working on. I research things that I find interesting, then document
+my findings with a public blog post, which I can refer to
+later. Hopefully other people will find these posts helpful, relevant,
+or interesting.
+
+You can reach me at [[mailto:seylerius@seriouslyseylerius.com][seylerius@seriouslyseylerius.com]]
+
+*** Other Places I am At
+
+ - [[http://github.com/seylerius][Github]]
+ - [[http://twitter.com/seylerius][Twitter]]
+ - [[https://reddit.com/u/seylerius][Reddit]]

@@ -1,0 +1,9 @@
+#+title: Rebooting the Site
+#+author: Elliott "Seylerius" Seyler
+#+tags: clojure, seriouslyseylerius, seylerius, updates
+
+Obviously enough to those who've checked, my site's been down for a while, due to my dissatisfaction with how I'd set it up and lack of time to fix it. Equally obviously, this state has changed.
+
+I've rebuilt the site using [[http://nakkaya.com/static.html][Nakkaya's static]], a Clojure-based static site generator. I'm going to be featuring writeups more than blog posts, and have thus chosen a tool that supports [[http://orgmode.org][org-mode]], an easily learned text markup that can double as a code notebook, among many other things. This allows me to easily embed the code and results I use in my analysis directly into my writeups. 
+
+Disqus comments are still at the bottom of posts, and I welcome your feedback about the change, as well as anything I share. 

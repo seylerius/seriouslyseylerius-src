@@ -1,0 +1,52 @@
+#+title: Vacationer-in-Chief: a Comparative Analysis of Donald Trump's Presidential Vacations
+#+author: Seylerius
+#+date: 2017-04-22
+#+summary: Donald Trump, known for complaining about Barack Obama's vacations, has taken a lot of his own.
+#+options: toc:nil
+
+President Trump made a lot of noise about work ethic and vacations during his campaign. In addition to complaining several times about former president Barack Obama's vacations, Trump insisted that he wouldn't have time to vacation while president.
+
+* Trump's Statements
+
+** Obama Vacationed Too Much
+
+#+BEGIN_QUOTE
+The habitual vacationer, @BarackObama, is now in Hawaii. This vacation is costing taxpayers $4 milion +++ while there is 20% unemployment
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+President @BarackObama's vacation is costing taxpayers millions of dollars——Unbelievable!
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+President @BarackObama's vacation is costing taxpayers millions of dollars----Unbelievable!
+#+END_QUOTE
+
+** Trump won't take any
+
+* Trump's Vacations
+
+** When
+
+#+tblname: trips
+| Destination      |      Start |        End |
+|------------------+------------+------------|
+| Mar-a-Lago       | 2017-02-03 | 2017-03-06 |
+| Mar-a-Lago       | 2017-02-10 | 2017-02-12 |
+| Mar-a-Lago       | 2017-02-17 | 2017-02-20 |
+| Mar-a-Lago       | 2017-03-03 | 2017-03-05 |
+| Mar-a-Lago       | 2017-03-17 | 2017-03-19 |
+| Trump Nat'l Golf | 2017-03-25 | 2017-03-26 |
+| Trump Nat'l Golf | 2017-04-02 | 2017-04-02 |
+| Mar-a-Lago       | 2017-04-06 | 2017-04-09 |
+| Mar-a-Lago       | 2017-04-13 | 2017-04-16 |
+
+** Cost
+
+** Profits
+
+* Obama's Vacations
+
+** When
+
+** Cost

@@ -1,0 +1,165 @@
+#+title: Louise Mensch vs Who What Why: Bulgarian Servers?
+#+author: Elliott "Seylerius" Seyler
+#+date: 2017-05-11
+
+/Who What Why/ and activist journalist Louise Mensch have gotten into a spat on Twitter about [[*Claims][whether or not]] /Who What Why/ is hosted in Bulgaria, and both have shared seemingly valid evidence. The only thing to do is break it down and let the data sort them out.
+
+* Summary
+
+Although /Who What Why's/ hosting company, Siteground, lists a contact address in Bulgaria, GeoIP location data indicates that /Who What Why's/ server is located in Chicago, IL. No suspicious activity surrounding Siteground has yet been uncovered, though I welcome any additional verifiable data. 
+
+Even if /Who What Why/ were based in Bulgaria, it would mean very little for almost all users. Very little traffic to and from the /Who What Why/ servers is of any relevance to spies, and there isn't anything sensitive transmitted across their secure connection. The only thing /Who What Why/ is being trusted with is their ability to share their own opinions and evidence. Given this minimal trust, the only harm that seems to have even minimal likelihood is the extremely slim change of malware injection. This is both complicated and costly, given the variety of client platforms, as well as the chance of detection. Every attempt increases the chance of detection, which could create a scandal for whatever intelligence agency executes the injections. 
+
+* Claims
+
+Louise Mensch claims that /Who What Why/ can't be trusted due to a Bulgarian server.
+
+#+BEGIN_EXPORT HTML
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I wouldn&#39;t trust that &quot;whowhatwhy&quot; from Bulgaria by Russ Baker tbh <a href="https://t.co/lHv1t3etoR">https://t.co/lHv1t3etoR</a></p>&mdash; Louise Mensch (@LouiseMensch) <a href="https://twitter.com/LouiseMensch/status/862028415469277184">May 9, 2017</a></blockquote>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+/Who What Why's/ Russ Baker countered with the following tweet.
+
+#+BEGIN_EXPORT HTML
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/LouiseMensch">@LouiseMensch</a> Hey <a href="https://twitter.com/LouiseMensch">@LouiseMensch</a> --Nice going, getting yet another thing wildly wrong.... per attached, our servers are in Peoples&#39; Republic of..Chicago! <a href="https://t.co/u0XFR4rOaX">pic.twitter.com/u0XFR4rOaX</a></p>&mdash; Russ Baker (@RealRussBaker) <a href="https://twitter.com/RealRussBaker/status/862083248729542660">May 9, 2017</a></blockquote>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+Normally, I might say they can't both be right, but this time /they can/. 
+
+* Analysis
+
+The first step is to identify what IPs are identified as hosting servers for ~whowhatwhy.org~. 
+
+#+BEGIN_EXPORT HTML
+<details>
+  <summary>
+#+END_EXPORT
+
+#+BEGIN_SRC sh :exports both
+  dig whowhatwhy.org
+#+END_SRC
+
+#+BEGIN_EXPORT HTML
+  </summary>
+#+END_EXPORT
+
+#+RESULTS:
+|                  |              |                             |        |         |                |     |         |    |            |    |             |   |
+| ;                | <<>>         | DiG                         | 9.11.1 | <<>>    | whowhatwhy.org |     |         |    |            |    |             |   |
+| ;;               | global       | options:                    | +cmd   |         |                |     |         |    |            |    |             |   |
+| ;;               | Got          | answer:                     |        |         |                |     |         |    |            |    |             |   |
+| ;;               | ->>HEADER<<- | opcode:                     | QUERY, | status: | NOERROR,       | id: |   29713 |    |            |    |             |   |
+| ;;               | flags:       | qr                          | rd     | ra;     | QUERY:         | 1,  | ANSWER: | 1, | AUTHORITY: | 0, | ADDITIONAL: | 1 |
+|                  |              |                             |        |         |                |     |         |    |            |    |             |   |
+| ;;               | OPT          | PSEUDOSECTION:              |        |         |                |     |         |    |            |    |             |   |
+| ;                | EDNS:        | version:                    | 0,     | flags:; | udp:           | 512 |         |    |            |    |             |   |
+| ;;               | QUESTION     | SECTION:                    |        |         |                |     |         |    |            |    |             |   |
+| ;whowhatwhy.org. |              |                             | IN     | A       |                |     |         |    |            |    |             |   |
+|                  |              |                             |        |         |                |     |         |    |            |    |             |   |
+| ;;               | ANSWER       | SECTION:                    |        |         |                |     |         |    |            |    |             |   |
+| whowhatwhy.org.  |              | 2132                        | IN     | A       | 37.60.236.246  |     |         |    |            |    |             |   |
+|                  |              |                             |        |         |                |     |         |    |            |    |             |   |
+| ;;               | Query        | time:                       | 35     | msec    |                |     |         |    |            |    |             |   |
+| ;;               | SERVER:      | 192.168.8.1#53(192.168.8.1) |        |         |                |     |         |    |            |    |             |   |
+| ;;               | WHEN:        | Wed                         | May    | 10      | 23:57:10       | PDT |    2017 |    |            |    |             |   |
+| ;;               | MSG          | SIZE                        | rcvd:  | 59      |                |     |         |    |            |    |             |   |
+|                  |              |                             |        |         |                |     |         |    |            |    |             |   |
+
+#+BEGIN_EXPORT HTML
+</details>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+<details>
+  <summary>
+#+END_EXPORT
+
+Next, find the hosting details of that IP address.
+
+#+BEGIN_SRC sh :exports both
+  whois 37.60.236.246
+#+END_SRC
+
+#+BEGIN_EXPORT HTML
+  </summary>
+#+END_EXPORT
+
+#+RESULTS:
+| %              | This                 | is                                                     | the           | RIPE         | Database | query          | service.   |                        |             |         |         |        |         |
+| %              | The                  | objects                                                | are           | in           | RPSL     | format.        |            |                        |             |         |         |        |         |
+| %              |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| %              | The                  | RIPE                                                   | Database      | is           | subject  | to             | Terms      | and                    | Conditions. |         |         |        |         |
+| %              | See                  | http://www.ripe.net/db/support/db-terms-conditions.pdf |               |              |          |                |            |                        |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| %              | Note:                | this                                                   | output        | has          | been     | filtered.      |            |                        |             |         |         |        |         |
+| %              | To                   | receive                                                | output        | for          | a        | database       | update,    | use                    | the         | -B      | flag.   |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| %              | Information          | related                                                | to            | '37.60.236.0 | 0        | 37.60.236.255' |            |                        |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| %              | Abuse                | contact                                                | for           | '37.60.236.0 | 0        | 37.60.236.255' | is         | 'abuse@siteground.com' |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| inetnum:       | 37.60.236.0          | 0                                                      | 37.60.236.255 |              |          |                |            |                        |             |         |         |        |         |
+| netname:       | SiteGround-13062015  |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| descr:         | CHI-3                |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| country:       | US                   |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| admin-c:       | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| tech-c:        | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| status:        | ASSIGNED             | PA                                                     |               |              |          |                |            |                        |             |         |         |        |         |
+| language:      | EN                   |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| geoloc:        | 41.86956082699458    | -87.62695312                                           |               |              |          |                |            |                        |             |         |         |        |         |
+| mnt-by:        | YANI-SG              |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| mnt-by:        | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| created:       | 2015-08-27T12:08:23Z |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| last-modified: | 2016-01-26T14:32:52Z |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| source:        | RIPE                 |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| mnt-domains:   | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| person:        | Marian               | Marinov                                                |               |              |          |                |            |                        |             |         |         |        |         |
+| address:       | Racho                | Petkov                                                 | Kazandjiata   | 8,           | Floor    | 3,             | SiteGround |                        |             |         |         |        |         |
+| phone:         | +442071839093        |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| abuse-mailbox: | abuse@siteground.com |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| nic-hdl:       | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| mnt-by:        | MDM-SG               |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| created:       | 2014-04-29T15:50:14Z |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| last-modified: | 2016-07-18T11:09:21Z |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| source:        | RIPE                 | #                                                      | Filtered      |              |          |                |            |                        |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+| %              | This                 | query                                                  | was           | served       | by       | the            | RIPE       | Database               | Query       | Service | version | 1.88.1 | (ANGUS) |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+|                |                      |                                                        |               |              |          |                |            |                        |             |         |         |        |         |
+
+#+BEGIN_EXPORT HTML
+</details>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+<details>
+  <summary>
+#+END_EXPORT
+
+#+BEGIN_SRC sh :exports both
+  geoiplookup -f /usr/share/GeoIP/GeoIPCity.dat 37.60.236.246
+#+END_SRC
+
+#+BEGIN_EXPORT HTML
+  </summary>
+#+END_EXPORT
+
+#+RESULTS:
+| GeoIP City Edition | Rev 1: US | IL | Illinois | Chicago | 60661 | 41.8825 | -87.644096 | 602 | 312 |
+
+#+BEGIN_EXPORT HTML
+</details>
+#+END_EXPORT
+
++ Domain :: ~whowhatwhy.org~
++ IP Address on Record :: ~37.60.236.246~
++ Hosting Company :: Siteground
++ Contact Address Location :: Sofia, Bulgaria
++ GeoIP Location :: Chicago, IL
+
+* Explanation
+
+Ms. Mensch appears to have gotten turned around through her choice of tool. Threatcrowd appears to summarize the data they provide, allowing for misinterpretations. Further, given the intermittent sloppy reporting from /Who What Why/, it's understandable that she might be a bit suspicious. This particular case appears to be of little consequence, however, serving only to highlight the need for better security practices in general. Avoiding proprietary software (which cannot easily be inspected for backdoors—by experts you trust, even if not by yourself), limiting scripts, blocking ads and using modern, open source browsers all can help to protect you against most forms of malware, even when it's hidden in the content of a web site. 

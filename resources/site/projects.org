@@ -1,0 +1,18 @@
+#+title: Projects
+#+options: toc:nil
+
+The following projects take up the majority of my time. 
+
+* Emacs Queue
+
+I'll likely be releasing this publicly within a week or so. I got tired of considering whether a file needs ~sudo~ for authenticated access, and more fatigued still of keeping a second terminal open to access remote files in my local Emacs via TRAMP. 
+
+The Emacs Queue system is composed of a server (written in Clojure) that accepts requests to launch ~emacsclient~, and a client (written in Clojurescript and run on the fast-loading [[http://planck-repl.org/][Planck REPL]]) that calls that API both locally and over reverse SSH tunnels. The client automatically assembles the TRAMP spec for a given file, adding SSH hops and ~sudo~ authentication as needed.
+
+* Service Desk
+
+A slightly longer-term and slower-paced project, this will assist in managing information intake, to prevent being overwhelmed. It will be able to aggregate RSS feeds, Reddit & Twitter, aiming to prevent echo chamber effects. Later features will also add mild bot capabilities, assisting with follower management and auto-responses.
+
+* Gnipping
+
+Given the rise of "alternative facts" and fake news, as well as the overwhelming volume of leaked data, we need a toolkit to organize and assist in the analysis of all the available information. Gnipping will be a collaborative toolkit for research and analysis.
