@@ -4,7 +4,7 @@
 
 /Who What Why/ and activist journalist Louise Mensch have gotten into a spat on Twitter about [[*Claims][whether or not]] /Who What Why/ is hosted in Bulgaria, and both have shared seemingly valid evidence. The only thing to do is break it down and sort the conflict out through analysis.
 
-* Summary
+* Abstract
 
 Although /Who What Why's/ hosting company, Siteground, lists a contact address in Bulgaria, GeoIP location data indicates that /Who What Why's/ server is located in Chicago, IL. No suspicious activity surrounding Siteground has yet been uncovered, though I welcome any additional verifiable data. 
 

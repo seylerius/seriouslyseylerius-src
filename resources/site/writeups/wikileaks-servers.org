@@ -11,7 +11,7 @@ So, this tweet has been making the rounds.
 
 Patrick seems to be making the argument that Wikileaks is running on Russian servers, and that this indicates Russian influence over Wikileaks. I'll take a look at each of these points. 
 
-* Summary
+* Abstract
 
 Analysis of DNS and ~whois~ data for ~wikileaks.org~ and subdomains reveals multiple servers hosted in Russia with a company called Hostkey. One of these servers lists contact data in Amsterdam, despite the server (and the company's headquarters) being located in Moscow. Hostkey's suspected and confirmed connections to FSB, the Russian hacker community, and Russian surveillance technology firms are concerning given that there is reason to suspect that Wikileaks' SSL connections are terminating in Moscow, thus providing the Russians with a cleartext copy of the private key.
 
