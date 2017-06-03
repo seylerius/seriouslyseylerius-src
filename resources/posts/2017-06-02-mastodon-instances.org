@@ -1,0 +1,29 @@
+#+title: Mastodon Instances, Explained Visually
+#+author: Elliott Seylerius Seyler
+#+tags: uml, plantuml, mastodon, social, social media
+
+I've been trying out the Mastodon federated social network, and realized that many people might not get the nuances of choosing an instance. To understand how your choice of instance can impact your experience, let's look at what views you see as a hypothetical user.
+
+#+BEGIN_EXPORT HTML
+<p><img src="/images/mastodon1.png" /></p>
+#+END_EXPORT
+
+Here's a hypothetical spread of the federated social network. You can follow users from any instance, and they can follow you.
+
+#+BEGIN_EXPORT HTML
+<p><img src="/images/mastodon2-jane.png" /></p>
+#+END_EXPORT
+
+Each user has a personal feed composed of just the users they follow. The orange stick figures indicate which users Jane sees in her personal feed.
+
+#+BEGIN_EXPORT HTML
+<p><img src="/images/mastodon3-timelines.png" /></p>
+#+END_EXPORT
+
+Each user also can access two timelines produced by their instance: the local timeline and the federated timeline. These feeds are useful for discovering discussions to participate in or people to follow. The local timeline, as indicated by the blue figures, is a feed composed of everyone on your instance. The federated timeline adds everyone that people on your instance follow, indicated by the green. Apparently none of these hypothetical mastodon.social users like Mark.
+
+Each instance has its own policies and priorities. Some aim for debate, others for art. Some try to block trolls, others only block the most egregious hate speech. Some lean towards technical topics, others towards politics. Many mix these concerns. These policies and priorities will influence what you find on the local timeline, and to a certain extent the federated timeline. 
+
+You can check out a preview of any instance's content with Unmung.com's [[http://www.unmung.com/mastoview?url=mastodon.social&view=local][MastoView tool.]] Check out different instances before signing up. 
+
+If you've already signed up, it's easy to migrate. Every instance makes available data import and export tools, allowing you to take your info to another server. 
